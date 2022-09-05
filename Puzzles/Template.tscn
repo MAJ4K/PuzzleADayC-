@@ -1,0 +1,62 @@
+[gd_scene format=2]
+
+[node name="Template" type="VBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="BufferTop" type="Control" parent="."]
+margin_right = 360.0
+margin_bottom = 307.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.3
+
+[node name="Title" type="Label" parent="."]
+margin_top = 311.0
+margin_right = 360.0
+margin_bottom = 325.0
+text = "Template"
+align = 1
+valign = 1
+autowrap = true
+uppercase = true
+
+[node name="HBox" type="HBoxContainer" parent="."]
+margin_top = 329.0
+margin_right = 360.0
+margin_bottom = 329.0
+size_flags_horizontal = 5
+size_flags_vertical = 5
+
+[node name="BufferLeft" type="Control" parent="HBox"]
+margin_right = 176.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="GBox" type="GridContainer" parent="HBox"]
+margin_left = 180.0
+margin_right = 180.0
+size_flags_horizontal = 5
+size_flags_vertical = 5
+columns = 5
+
+[node name="BufferRight" type="Control" parent="HBox"]
+margin_left = 184.0
+margin_right = 360.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="BufferBottom" type="Control" parent="."]
+margin_top = 333.0
+margin_right = 360.0
+margin_bottom = 640.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.3
+
+[node name="PlaceHolder" type="Button" parent="."]
+visible = false
+margin_top = 620.0
+margin_right = 360.0
+margin_bottom = 640.0
+rect_min_size = Vector2( 50, 50 )

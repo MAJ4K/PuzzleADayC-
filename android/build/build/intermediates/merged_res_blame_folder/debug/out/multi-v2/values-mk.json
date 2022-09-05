@@ -1,0 +1,60 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mk/values-mk.xml",
+            "map": [
+                {
+                    "source": "/home/maj4k/.gradle/caches/transforms-3/8d597b6cd96a2a9072ba06a515c17baa/transformed/jetified-play-services-ads-19.3.0/res/values-mk/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10",
+                        "startColumns": "0,0,0,0,0,0,0",
+                        "startOffsets": "199,274,405,470,533,618,735",
+                        "endColumns": "74,130,64,62,84,116,78",
+                        "endOffsets": "273,404,469,532,617,734,813"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "301,380,515,584,651,740,861",
+                        "endColumns": "78,134,68,66,88,120,82",
+                        "endOffsets": "375,510,579,646,735,856,939"
+                    }
+                },
+                {
+                    "source": "/home/maj4k/.gradle/caches/transforms-3/250cd1252705ee790b8b2d7fb19d43d9/transformed/jetified-play-services-basement-17.0.0/res/values-mk/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "195",
+                        "endOffsets": "442"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "105",
+                        "endColumns": "195",
+                        "endOffsets": "296"
+                    }
+                },
+                {
+                    "source": "/home/maj4k/.gradle/caches/transforms-3/f468396e8f36529b92fb98842a149f3b/transformed/core-1.2.0/res/values-mk/values-mk.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "944",
+                        "endColumns": "100",
+                        "endOffsets": "1040"
+                    }
+                }
+            ]
+        }
+    ]
+}

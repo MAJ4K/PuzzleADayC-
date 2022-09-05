@@ -1,0 +1,77 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/build/intermediates/incremental/mergeDebugResources/merged.dir/values-vi/values-vi.xml",
+            "map": [
+                {
+                    "source": "/home/maj4k/.gradle/caches/transforms-3/250cd1252705ee790b8b2d7fb19d43d9/transformed/jetified-play-services-basement-17.0.0/res/values-vi/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "194",
+                        "endOffsets": "441"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "105",
+                        "endColumns": "194",
+                        "endOffsets": "295"
+                    }
+                },
+                {
+                    "source": "/home/maj4k/.gradle/caches/transforms-3/8d597b6cd96a2a9072ba06a515c17baa/transformed/jetified-play-services-ads-19.3.0/res/values-vi/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10",
+                        "startColumns": "0,0,0,0,0,0,0",
+                        "startOffsets": "199,268,381,448,513,587,681",
+                        "endColumns": "68,112,66,64,73,93,77",
+                        "endOffsets": "267,380,447,512,586,680,758"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "370,443,560,631,700,778,876",
+                        "endColumns": "72,116,70,68,77,97,81",
+                        "endOffsets": "438,555,626,695,773,871,953"
+                    }
+                },
+                {
+                    "source": "/home/maj4k/.gradle/caches/transforms-3/f468396e8f36529b92fb98842a149f3b/transformed/core-1.2.0/res/values-vi/values-vi.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "11",
+                        "startColumns": "4",
+                        "startOffsets": "958",
+                        "endColumns": "100",
+                        "endOffsets": "1054"
+                    }
+                },
+                {
+                    "source": "/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/res/values-vi/godot_project_name_string.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "1",
+                        "startOffsets": "112",
+                        "endColumns": "66",
+                        "endOffsets": "177"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "300",
+                        "endColumns": "69",
+                        "endOffsets": "365"
+                    }
+                }
+            ]
+        }
+    ]
+}

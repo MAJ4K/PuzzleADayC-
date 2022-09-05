@@ -1,0 +1,50 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": []
+  },
+  "packageFolders": {
+    "/home/maj4k/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/maj4k/Projects/Godot/PuzzleADayC#/Puzzle A Day C#.csproj",
+      "projectName": "Puzzle A Day C#",
+      "projectPath": "/home/maj4k/Projects/Godot/PuzzleADayC#/Puzzle A Day C#.csproj",
+      "packagesPath": "/home/maj4k/.nuget/packages/",
+      "outputPath": "/home/maj4k/Projects/Godot/PuzzleADayC#/.mono/temp/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/maj4k/.config/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "targetAlias": "net472",
+        "runtimeIdentifierGraphPath": "/usr/lib/mono/msbuild/Current/bin/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

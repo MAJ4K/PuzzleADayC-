@@ -1,0 +1,290 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://TodaysPuzzle.cs" type="Script" id=1]
+[ext_resource path="res://Themes/Fonts/Bungee_Inline/BungeeInline-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://admob-lib/admob.gd" type="Script" id=3]
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.172549, 0.172549, 0.172549, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 1, 0.619608, 0, 1 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 36
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 22
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.6, 0.6, 0.6, 0.227451 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0, 0, 0, 1 )
+border_blend = true
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("LoadingGraphic:anchor_top")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "load_toggle"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("LoadingGraphic:anchor_top")
+tracks/0/interp = 2
+tracks/0/loop_wrap = false
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[node name="TodaysPuzzle" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Background" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="LoadingGraphic" type="Panel" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+custom_styles/panel = SubResource( 7 )
+
+[node name="TitleMenu" type="VBoxContainer" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Title" type="Label" parent="TitleMenu"]
+margin_right = 360.0
+margin_bottom = 140.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.2
+text = "A Puzzling Day"
+align = 1
+valign = 2
+
+[node name="CBox" type="CenterContainer" parent="TitleMenu"]
+margin_top = 144.0
+margin_right = 360.0
+margin_bottom = 495.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Menu" type="VBoxContainer" parent="TitleMenu/CBox"]
+margin_left = 127.0
+margin_top = 165.0
+margin_right = 232.0
+margin_bottom = 185.0
+
+[node name="Button" type="Button" parent="TitleMenu/CBox/Menu"]
+margin_right = 105.0
+margin_bottom = 20.0
+text = "Today's Puzzle"
+
+[node name="Label" type="Control" parent="TitleMenu"]
+margin_top = 499.0
+margin_right = 360.0
+margin_bottom = 640.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.2
+
+[node name="ErrorGraphic" type="Panel" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -150.0
+margin_top = -150.0
+margin_right = 150.0
+margin_bottom = 150.0
+mouse_filter = 2
+custom_styles/panel = SubResource( 2 )
+
+[node name="Label" type="Label" parent="ErrorGraphic"]
+anchor_right = 1.0
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 8 )
+text = "ERROR"
+align = 1
+valign = 1
+autowrap = true
+uppercase = true
+
+[node name="Label2" type="Label" parent="ErrorGraphic"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -24.5
+margin_bottom = 24.5
+custom_fonts/font = SubResource( 9 )
+text = "The Error Message Goes Here!"
+align = 1
+valign = 1
+autowrap = true
+uppercase = true
+
+[node name="NameEdit" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="LineEdit" type="LineEdit" parent="NameEdit"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -150.0
+margin_top = 50.0
+margin_right = 150.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 300, 100 )
+custom_styles/normal = SubResource( 10 )
+align = 1
+max_length = 10
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+
+[node name="AdMob" type="Node" parent="."]
+script = ExtResource( 3 )
+interstitial_id = "ca-app-pub-3940256099942544/1033173712"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 3 )
+anims/load_toggle = SubResource( 4 )
+
+[node name="PopupPanel2" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -149.5
+margin_top = -222.0
+margin_right = 149.5
+margin_bottom = 222.0
+rect_clip_content = true
+
+[node name="TabContainer" type="TabContainer" parent="PopupPanel2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="HITORI" type="VBoxContainer" parent="PopupPanel2/TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Buffer" type="Control" parent="PopupPanel2/TabContainer/HITORI"]
+margin_right = 291.0
+margin_bottom = 10.0
+rect_min_size = Vector2( 0, 10 )
+
+[node name="Label2" type="Label" parent="PopupPanel2/TabContainer/HITORI"]
+margin_top = 14.0
+margin_right = 291.0
+margin_bottom = 181.0
+text = "No row or column can have more than one occurrence of any given number.
+
+Crossed cells cannot be horizontally or vertically adjacent, although they can be diagonal to one another.
+
+The remaining numbered cells must be all connected to each other, horizontally or vertically."
+align = 1
+autowrap = true
+
+[node name="SUDOKU" type="VBoxContainer" parent="PopupPanel2/TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Buffer2" type="Control" parent="PopupPanel2/TabContainer/SUDOKU"]
+margin_right = 291.0
+margin_bottom = 10.0
+rect_min_size = Vector2( 0, 10 )
+
+[node name="Label2" type="Label" parent="PopupPanel2/TabContainer/SUDOKU"]
+margin_top = 14.0
+margin_right = 291.0
+margin_bottom = 45.0
+text = "Each digit/letter can Only occur once per Row, Column, & Block."
+align = 1
+autowrap = true
+
+[node name="LIGHTS OUT" type="VBoxContainer" parent="PopupPanel2/TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Buffer3" type="Control" parent="PopupPanel2/TabContainer/LIGHTS OUT"]
+margin_right = 291.0
+margin_bottom = 10.0
+rect_min_size = Vector2( 0, 10 )
+
+[node name="Label2" type="Label" parent="PopupPanel2/TabContainer/LIGHTS OUT"]
+margin_top = 14.0
+margin_right = 291.0
+margin_bottom = 62.0
+text = "The goal of the puzzle is to switch all the lights off, preferably in as few button presses as possible.."
+align = 1
+autowrap = true
+
+[node name="Button" type="Button" parent="PopupPanel2"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -145.5
+margin_top = -440.0
+margin_right = 145.5
+margin_bottom = -4.0
+rect_min_size = Vector2( 250, 30 )
+text = "Close"

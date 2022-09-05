@@ -1,0 +1,77 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/build/intermediates/incremental/mergeDebugResources/merged.dir/values-el/values-el.xml",
+            "map": [
+                {
+                    "source": "/home/maj4k/.gradle/caches/transforms-3/f468396e8f36529b92fb98842a149f3b/transformed/core-1.2.0/res/values-el/values-el.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "11",
+                        "startColumns": "4",
+                        "startOffsets": "1060",
+                        "endColumns": "100",
+                        "endOffsets": "1156"
+                    }
+                },
+                {
+                    "source": "/home/maj4k/.gradle/caches/transforms-3/8d597b6cd96a2a9072ba06a515c17baa/transformed/jetified-play-services-ads-19.3.0/res/values-el/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10",
+                        "startColumns": "0,0,0,0,0,0,0",
+                        "startOffsets": "199,274,409,474,540,630,754",
+                        "endColumns": "74,134,64,65,89,123,78",
+                        "endOffsets": "273,408,473,539,629,753,832"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "398,477,616,685,755,849,977",
+                        "endColumns": "78,138,68,69,93,127,82",
+                        "endOffsets": "472,611,680,750,844,972,1055"
+                    }
+                },
+                {
+                    "source": "/home/maj4k/.gradle/caches/transforms-3/250cd1252705ee790b8b2d7fb19d43d9/transformed/jetified-play-services-basement-17.0.0/res/values-el/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "222",
+                        "endOffsets": "469"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "105",
+                        "endColumns": "222",
+                        "endOffsets": "323"
+                    }
+                },
+                {
+                    "source": "/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/res/values-el/godot_project_name_string.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "1",
+                        "startOffsets": "112",
+                        "endColumns": "66",
+                        "endOffsets": "177"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "328",
+                        "endColumns": "69",
+                        "endOffsets": "393"
+                    }
+                }
+            ]
+        }
+    ]
+}

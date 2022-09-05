@@ -1,0 +1,165 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.godotengine.puzzleadayc"
+4    android:installLocation="auto"
+5    android:versionCode="1"
+6    android:versionName="1.0" > <!-- glEsVersion is modified by the exporter, changing this value here has no effect. -->
+7    <uses-sdk
+8        android:minSdkVersion="23"
+9        android:targetSdkVersion="30" />
+10
+11    <supports-screens
+11-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:12:5-16:40
+12        android:largeScreens="true"
+12-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:15:9-36
+13        android:normalScreens="true"
+13-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:14:9-37
+14        android:smallScreens="true"
+14-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:13:9-36
+15        android:xlargeScreens="true" />
+15-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:16:9-37
+16
+17    <uses-feature
+17-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/src/debug/AndroidManifest.xml:10:5-78
+18        android:glEsVersion="0x00030000"
+18-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/src/debug/AndroidManifest.xml:10:19-51
+19        android:required="true" />
+19-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/src/debug/AndroidManifest.xml:10:52-75
+20
+21    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+21-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/src/debug/AndroidManifest.xml:11:5-79
+21-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/src/debug/AndroidManifest.xml:11:22-76
+22    <uses-permission android:name="android.permission.INTERNET" />
+22-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/src/debug/AndroidManifest.xml:12:5-67
+22-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/src/debug/AndroidManifest.xml:12:22-64
+23
+24    <instrumentation
+24-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/src/debug/AndroidManifest.xml:13:5-18:60
+25        android:name=".GodotInstrumentation"
+25-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/src/debug/AndroidManifest.xml:15:9-45
+26        android:icon="@mipmap/icon"
+26-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/src/debug/AndroidManifest.xml:16:9-36
+27        android:label="@string/godot_project_name_string"
+27-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/src/debug/AndroidManifest.xml:17:9-58
+28        android:targetPackage="org.godotengine.$genname" />
+28-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/src/debug/AndroidManifest.xml:18:9-57
+29
+30    <uses-permission android:name="android.permission.WAKE_LOCK" />
+30-->[com.google.android.gms:play-services-measurement-sdk-api:17.1.0] /home/maj4k/.gradle/caches/transforms-3/a1208de0ae8909f9bacc150a37e80ab0/transformed/jetified-play-services-measurement-sdk-api-17.1.0/AndroidManifest.xml:25:5-68
+30-->[com.google.android.gms:play-services-measurement-sdk-api:17.1.0] /home/maj4k/.gradle/caches/transforms-3/a1208de0ae8909f9bacc150a37e80ab0/transformed/jetified-play-services-measurement-sdk-api-17.1.0/AndroidManifest.xml:25:22-65
+31
+32    <application
+32-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:31:5-91:19
+33        android:allowBackup="false"
+33-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:31:68-95
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.2.0] /home/maj4k/.gradle/caches/transforms-3/f468396e8f36529b92fb98842a149f3b/transformed/core-1.2.0/AndroidManifest.xml:24:18-86
+35        android:debuggable="true"
+36        android:extractNativeLibs="false"
+37        android:hasFragileUserData="false"
+37-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:31:118-152
+38        android:icon="@mipmap/icon"
+38-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:31:238-265
+39        android:isGame="true"
+39-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:31:96-117
+40        android:label="@string/godot_project_name_string"
+40-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:31:18-67
+41        android:requestLegacyExternalStorage="false" >
+41-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:31:153-197
+42        <activity
+42-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:59:9-81:20
+43            android:name="com.godot.game.GodotApp"
+43-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:60:13-37
+44            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|density|keyboard|navigation|screenLayout|uiMode"
+44-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:66:13-141
+45            android:excludeFromRecents="false"
+45-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:64:13-47
+46            android:label="@string/godot_project_name_string"
+46-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:61:13-62
+47            android:launchMode="singleTask"
+47-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:63:13-44
+48            android:resizeableActivity="false"
+48-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:67:13-47
+49            android:screenOrientation="portrait"
+49-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:65:13-50
+50            android:theme="@style/GodotAppSplashTheme" >
+50-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:62:13-55
+51            <intent-filter>
+51-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:73:13-80:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:74:17-69
+52-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:74:25-66
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:75:17-77
+54-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:75:27-74
+55
+56                <!--
+57                Enable access to OpenXR on Oculus mobile devices, no-op on other Android
+58                platforms.
+59                -->
+60                <category android:name="com.oculus.intent.category.VR" />
+60-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:79:17-74
+60-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:79:27-71
+61            </intent-filter>
+62        </activity>
+63        <!-- Records the version of the Godot editor used for building -->
+64        <meta-data
+65            android:name="org.godotengine.editor.version"
+66            android:value="3.4.4.stable.mono" /> <!-- Custom application XML added by add-ons. -->
+67        <!-- CHUNK_APPLICATION_BEGIN -->
+68        <!-- CHUNK_APPLICATION_END -->
+69        <meta-data
+69-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:87:9-89:69
+70            android:name="com.google.android.gms.ads.APPLICATION_ID"
+70-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:88:13-69
+71            android:value="ca-app-pub-3940256099942544~3347511713" /> <!-- Records the version of the Godot library -->
+71-->/home/maj4k/Projects/Godot/PuzzleADayC#/android/build/AndroidManifest.xml:89:13-67
+72        <meta-data
+72-->[godot-lib.debug.aar] /home/maj4k/.gradle/caches/transforms-3/58408867a61ae0eb6092dd640ab3ac13/transformed/jetified-godot-lib.debug/AndroidManifest.xml:19:9-21:44
+73            android:name="org.godotengine.library.version"
+73-->[godot-lib.debug.aar] /home/maj4k/.gradle/caches/transforms-3/58408867a61ae0eb6092dd640ab3ac13/transformed/jetified-godot-lib.debug/AndroidManifest.xml:20:13-59
+74            android:value="3.4.4.stable" />
+74-->[godot-lib.debug.aar] /home/maj4k/.gradle/caches/transforms-3/58408867a61ae0eb6092dd640ab3ac13/transformed/jetified-godot-lib.debug/AndroidManifest.xml:21:13-41
+75
+76        <service android:name="org.godotengine.godot.GodotDownloaderService" />
+76-->[godot-lib.debug.aar] /home/maj4k/.gradle/caches/transforms-3/58408867a61ae0eb6092dd640ab3ac13/transformed/jetified-godot-lib.debug/AndroidManifest.xml:23:9-80
+76-->[godot-lib.debug.aar] /home/maj4k/.gradle/caches/transforms-3/58408867a61ae0eb6092dd640ab3ac13/transformed/jetified-godot-lib.debug/AndroidManifest.xml:23:18-77
+77
+78        <meta-data
+78-->[GodotAdMob.5.1.0.release.aar] /home/maj4k/.gradle/caches/transforms-3/b82c7793de6470fe2844c7b59a589c95/transformed/jetified-GodotAdMob.5.1.0.release/AndroidManifest.xml:14:9-16:82
+79            android:name="org.godotengine.plugin.v1.GodotAdMob"
+79-->[GodotAdMob.5.1.0.release.aar] /home/maj4k/.gradle/caches/transforms-3/b82c7793de6470fe2844c7b59a589c95/transformed/jetified-GodotAdMob.5.1.0.release/AndroidManifest.xml:15:13-64
+80            android:value="shinnil.godot.plugin.android.godotadmob.GodotAdMob" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+80-->[GodotAdMob.5.1.0.release.aar] /home/maj4k/.gradle/caches/transforms-3/b82c7793de6470fe2844c7b59a589c95/transformed/jetified-GodotAdMob.5.1.0.release/AndroidManifest.xml:16:13-79
+81        <activity
+81-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/maj4k/.gradle/caches/transforms-3/2644392d3a264858c09296694a72a450/transformed/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:29:9-33:64
+82            android:name="com.google.android.gms.ads.AdActivity"
+82-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/maj4k/.gradle/caches/transforms-3/2644392d3a264858c09296694a72a450/transformed/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:30:13-65
+83            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+83-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/maj4k/.gradle/caches/transforms-3/2644392d3a264858c09296694a72a450/transformed/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:31:13-122
+84            android:exported="false"
+84-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/maj4k/.gradle/caches/transforms-3/2644392d3a264858c09296694a72a450/transformed/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:32:13-37
+85            android:theme="@android:style/Theme.Translucent" />
+85-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/maj4k/.gradle/caches/transforms-3/2644392d3a264858c09296694a72a450/transformed/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:33:13-61
+86
+87        <provider
+87-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/maj4k/.gradle/caches/transforms-3/2644392d3a264858c09296694a72a450/transformed/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:35:9-39:39
+88            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+88-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/maj4k/.gradle/caches/transforms-3/2644392d3a264858c09296694a72a450/transformed/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:36:13-76
+89            android:authorities="org.godotengine.puzzleadayc.mobileadsinitprovider"
+89-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/maj4k/.gradle/caches/transforms-3/2644392d3a264858c09296694a72a450/transformed/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:37:13-73
+90            android:exported="false"
+90-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/maj4k/.gradle/caches/transforms-3/2644392d3a264858c09296694a72a450/transformed/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:38:13-37
+91            android:initOrder="100" />
+91-->[com.google.android.gms:play-services-ads-lite:19.3.0] /home/maj4k/.gradle/caches/transforms-3/2644392d3a264858c09296694a72a450/transformed/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:39:13-36
+92
+93        <meta-data
+93-->[com.google.android.gms:play-services-basement:17.0.0] /home/maj4k/.gradle/caches/transforms-3/250cd1252705ee790b8b2d7fb19d43d9/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+94            android:name="com.google.android.gms.version"
+94-->[com.google.android.gms:play-services-basement:17.0.0] /home/maj4k/.gradle/caches/transforms-3/250cd1252705ee790b8b2d7fb19d43d9/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+95            android:value="@integer/google_play_services_version" />
+95-->[com.google.android.gms:play-services-basement:17.0.0] /home/maj4k/.gradle/caches/transforms-3/250cd1252705ee790b8b2d7fb19d43d9/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+96    </application>
+97
+98</manifest>
